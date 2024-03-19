@@ -1,0 +1,9 @@
+﻿services:
+  keyvaluestore:
+    container_name: drew-raft
+    image: keyvaluestore
+    build:
+      context: .
+      dockerfile: KeyValueStore/Dockerfile
+    ports:
+      - "4322:8080"
