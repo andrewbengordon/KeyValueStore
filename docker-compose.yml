@@ -10,7 +10,8 @@
     networks:
       - drew-raft-network
     restart: unless-stopped
-
+    
 networks:
   drew-raft-network:
-    external: true
+    name: drew-raft-network
+    driver: bridge
