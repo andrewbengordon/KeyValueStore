@@ -9,6 +9,7 @@
       - "4322:8080"
     networks:
       - drew-raft-network
+    restart: unless-stopped
 
 networks:
   drew-raft-network:
