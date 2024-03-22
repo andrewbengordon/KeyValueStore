@@ -7,3 +7,9 @@
       dockerfile: KeyValueStore/Dockerfile
     ports:
       - "4322:8080"
+    networks:
+      - drew-raft-network
+
+networks:
+  drew-raft-network:
+    external: true
